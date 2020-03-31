@@ -32,7 +32,7 @@ ifeq ($(call is-board-platform-in-list, $(TARGETS_THAT_DONT_SUPPORT_SW_VENC_720P
 libmm-venc-def += -DDISABLE_720P
 endif
 
-ifeq ($(TARGET_BOARD_PLATFORM),msm8610)
+ifeq ($(PRODUCT_BOARD_PLATFORM),msm8610)
 libmm-venc-def += -D_MSM8610_
 endif
 
